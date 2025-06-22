@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Achievement Badges</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background: #0d1117;
+            color: #c9d1d9;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #58a6ff;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            color: #8b949e;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .achievement-card {
+            background: #161b22;
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid #30363d;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .achievement-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+            display: block;
+        }
+
+        .achievement-title {
+            color: #58a6ff;
+            font-size: 1.25rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-description {
+            color: #8b949e;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub Achievement Badges</h1>
+            <p class="description">Discover the collection of achievements you can earn on GitHub. These badges showcase your contributions and engagement within the GitHub community.</p>
+        </header>
+
+        <div class="achievements-grid">
+            <!-- Quickdraw -->
+            <div class="achievement-card">
+                <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" alt="Quickdraw Achievement" class="achievement-icon">
+                <h3 class="achievement-title">Quickdraw</h3>
+                <p class="achievement-description">Closed a pull request or issue within 5 minutes of opening</p>
+            </div>
+
+            <!-- Pull Shark -->
+            <div class="achievement-card">
+                <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="Pull Shark Achievement" class="achievement-icon">
+                <h3 class="achievement-title">Pull Shark</h3>
+                <p class="achievement-description">Opened a pull request that has been merged</p>
+            </div>
+
+            <!-- YOLO -->
+            <div class="achievement-card">
+                <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" alt="YOLO Achievement" class="achievement-icon">
+                <h3 class="achievement-title">YOLO</h3>
+                <p class="achievement-description">Merged a pull request without a review</p>
+            </div>
+
+            <!-- Galaxy Brain -->
+            <div class="achievement-card">
+                <img src="https://github.githubassets.com/images/modules/profile/achievements/galaxy-brain-default.png" alt="Galaxy Brain Achievement" class="achievement-icon">
+                <h3 class="achievement-title">Galaxy Brain</h3>
+                <p class="achievement-description">Answered a discussion and got multiple upvotes</p>
+            </div>
+
+            <!-- Pair Extraordinaire -->
+            <div class="achievement-card">
+                <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" alt="Pair Extraordinaire Achievement" class="achievement-icon">
+                <h3 class="achievement-title">Pair Extraordinaire</h3>
+                <p class="achievement-description">Coauthored commits on merged pull request</p>
+            </div>
+
+            <!-- Starstruck -->
+            <div class="achievement-card">
+                <img src="https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png" alt="Starstruck Achievement" class="achievement-icon">
+                <h3 class="achievement-title">Starstruck</h3>
+                <p class="achievement-description">Created a repository that has many stars</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>These achievements are part of GitHub's profile features. Learn more about how to earn them by contributing to repositories and engaging with the community.</p>
+        </footer>
+    </div>
+</body>
+</html>
